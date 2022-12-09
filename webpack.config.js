@@ -39,7 +39,7 @@ module.exports = (env, argv) => ({
         use: {
           loader: 'babel-loader',
         },
-      }, {
+      }, {  
         test: /\.(scss)$/,
         use: [
           {

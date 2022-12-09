@@ -11,11 +11,13 @@ barba.init({
 				pageOnLoad(next);
 			},
 			leave({current}) {
-				const done = this.async()
+				const done = this.async();
+
 				amimPageLeave(current, done);
 			},
 			after({next}) {
 				loadDomMethods(next.namespace);
+				
 				pageOnLoad(next);
 			},
 		}
